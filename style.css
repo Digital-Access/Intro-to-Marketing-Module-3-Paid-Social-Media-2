@@ -1,0 +1,258 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease 0.2s;
+}
+
+@font-face {
+    font-family: gothamMed;
+    src: url(https://a.storyblok.com/f/112136/x/5e402b0b67/gotham-medium.otf);
+}
+
+@font-face {
+    font-family: gothamLight;
+    src: url(https://a.storyblok.com/f/112136/x/1e7232d46e/gotham-book.otf);
+}
+
+@font-face {
+    font-family: gothamBold;
+    src: url(https://a.storyblok.com/f/112136/x/361f778928/gotham-bold.otf);
+}
+
+body {
+    display: flex;
+    background: transparent;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+.contentContainer{
+    height: 100%;
+    width: 100%;
+}
+
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    font-size: 1.3rem;
+    font-family: gothamMed, sans-serif; 
+    color: white;
+    min-height: 340px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.7rem;
+    font-family: gothamMed, sans-serif; 
+    color: white;
+}
+
+.start{
+    background-color: #25517B;
+    color: white;
+    width: fit-content;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: gothamLight, sans-serif;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+} 
+
+.counterContainer {
+    display: flex;
+    width: auto;
+    align-items: center;
+    font-family: gothamLight, sans-serif;
+    color: white;
+}
+
+.endScore {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+.endComment {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: gothamMed, sans-serif;
+    width: auto;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.463);
+    min-height: 340px;
+    padding-bottom: 1rem;
+}
+
+.navBtn {
+    background-color: #25517B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: fit-content;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: gothamLight, sans-serif;
+    border-radius: 5px;
+}
+
+.tryAgain {
+    background-color: #25517B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: fit-content;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bi-arrow-counterclockwise{
+    stroke-width: 8;
+}
+
+.result {
+    background-color: #25517B;
+    display: flex;
+    color: white;
+    min-width: 160px;
+    width: fit-content;
+    padding: 0.5rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: gothamLight, sans-serif;
+    border-radius: 5px;
+}
+
+.choices {
+    width: 100%;
+    min-height: 220.31px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.choice {
+    background-color: #172B49;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: gothamLight, sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.incorrect {
+    display: flex;
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: gothamLight, sans-serif;
+    border-radius: 5px;
+}
+
+.correct {
+    background-color: #008339 !important;
+    box-shadow: 0 0 6px 4px #ffffff;
+}
+
+.selected {
+    background-color: #A6529A;
+    color: white;
+}
+
+.start:hover{
+    box-shadow: 0 2px 4px rgb(0, 0, 0) ;
+    transform: translateY(-2px);
+}
+
+.choice:hover{
+    box-shadow: 0 2px 4px rgb(0, 0, 0) ;
+    transform: translateY(-2px);
+}
+
+.result:hover{
+    box-shadow: 0 2px 4px rgb(0, 0, 0) ;
+    transform: translateY(-2px);
+}
+
+.navBtn:hover{
+    box-shadow: 0 2px 4px rgb(0, 0, 0) ;
+    transform: translateY(-2px);
+}
+
+
+.tryAgain:hover{
+    box-shadow: 0 2px 4px rgb(0, 0, 0) ;
+    transform: translateY(-2px);
+}
