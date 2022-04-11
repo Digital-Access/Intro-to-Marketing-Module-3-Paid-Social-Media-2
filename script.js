@@ -7,7 +7,6 @@ let allQuestions = [{
         all_choices: ["Custom, Potential and Partner", "Custom, Lookalike and Saved", "Conceptual, Lookalike and Syndicated", "Custom, Potential and Saved"],
         correct: "Custom, Lookalike and Saved"
     }
-}
 }];
 
 
