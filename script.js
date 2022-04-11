@@ -4,7 +4,7 @@ let allQuestions = [{
     correct_text: "😁Correct!",
     incorrect_text: "❌Incorrect! The correct answer is Custom, Lookalike and Saved.",
     choices: {
-        all_choices: ["Custom, Potential and Partner", "Custom, Lookalike and Saved", "Conceptual, Lookalike and Syndicated"],
+        all_choices: ["Custom, Potential and Partner", "Custom, Lookalike and Saved", "Conceptual, Lookalike and Syndicated", "Custom, Potential and Saved"],
         correct: "Custom, Lookalike and Saved"
     }
 }
